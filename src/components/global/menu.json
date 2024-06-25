@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_menus",
+  "info": {
+    "displayName": "Menu",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "link": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}

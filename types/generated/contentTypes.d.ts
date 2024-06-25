@@ -831,12 +831,15 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     singularName: 'global';
     pluralName: 'globals';
     displayName: 'Global';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     hero: Attribute.Component<'global.hero', true>;
+    menu: Attribute.Component<'global.menu', true>;
+    socials: Attribute.Component<'global.socials', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
