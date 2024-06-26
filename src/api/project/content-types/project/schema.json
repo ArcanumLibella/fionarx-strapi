@@ -32,24 +32,43 @@
       "inversedBy": "projects"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "preview": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "missions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::mission.mission",
+      "mappedBy": "projects"
+    },
+    "technos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::techno.techno",
+      "mappedBy": "projects"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.link"
     }
   }
 }

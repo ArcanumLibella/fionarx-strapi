@@ -839,7 +839,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
   attributes: {
     hero: Attribute.Component<'global.hero', true>;
     menu: Attribute.Component<'global.menu', true>;
-    socials: Attribute.Component<'global.socials', true>;
+    socials: Attribute.Component<'global.socials'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -851,6 +851,42 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::global.global',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiMissionMission extends Schema.CollectionType {
+  collectionName: 'missions';
+  info: {
+    singularName: 'mission';
+    pluralName: 'missions';
+    displayName: 'Mission';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    slug: Attribute.UID<'api::mission.mission', 'name'>;
+    projects: Attribute.Relation<
+      'api::mission.mission',
+      'manyToMany',
+      'api::project.project'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::mission.mission',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::mission.mission',
       'oneToOne',
       'admin::user'
     > &
@@ -881,6 +917,17 @@ export interface ApiProjectProject extends Schema.CollectionType {
     >;
     thumbnail: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     preview: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    missions: Attribute.Relation<
+      'api::project.project',
+      'manyToMany',
+      'api::mission.mission'
+    >;
+    technos: Attribute.Relation<
+      'api::project.project',
+      'manyToMany',
+      'api::techno.techno'
+    >;
+    links: Attribute.Component<'blocks.link', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -892,6 +939,42 @@ export interface ApiProjectProject extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiTechnoTechno extends Schema.CollectionType {
+  collectionName: 'technos';
+  info: {
+    singularName: 'techno';
+    pluralName: 'technos';
+    displayName: 'Techno';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    slug: Attribute.UID<'api::techno.techno', 'name'>;
+    projects: Attribute.Relation<
+      'api::techno.techno',
+      'manyToMany',
+      'api::project.project'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::techno.techno',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::techno.techno',
       'oneToOne',
       'admin::user'
     > &
@@ -919,7 +1002,9 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::mission.mission': ApiMissionMission;
       'api::project.project': ApiProjectProject;
+      'api::techno.techno': ApiTechnoTechno;
     }
   }
 }

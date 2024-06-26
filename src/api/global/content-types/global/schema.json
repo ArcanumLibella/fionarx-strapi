@@ -24,7 +24,7 @@
     },
     "socials": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "global.socials"
     }
   }
