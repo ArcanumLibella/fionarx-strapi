@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "basic",
+        "large"
+      ]
+    },
+    "isCentered": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

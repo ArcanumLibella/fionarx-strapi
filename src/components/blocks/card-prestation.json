@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_card_prestations",
+  "info": {
+    "displayName": "CardPrestation",
+    "icon": "handHeart"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

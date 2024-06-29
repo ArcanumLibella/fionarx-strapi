@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_quotes",
+  "info": {
+    "displayName": "Quote",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "quoteContent": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

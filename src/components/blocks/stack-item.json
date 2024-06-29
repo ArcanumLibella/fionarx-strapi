@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_stack_items",
+  "info": {
+    "displayName": "StackItem",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}

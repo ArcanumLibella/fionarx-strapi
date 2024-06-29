@@ -894,6 +894,43 @@ export interface ApiMissionMission extends Schema.CollectionType {
   };
 }
 
+export interface ApiPagePage extends Schema.CollectionType {
+  collectionName: 'pages';
+  info: {
+    singularName: 'page';
+    pluralName: 'pages';
+    displayName: 'Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    slug: Attribute.UID<'api::page.page', 'title'>;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.text',
+        'blocks.link',
+        'blocks.quote',
+        'blocks.separator',
+        'blocks.spacer',
+        'blocks.list',
+        'blocks.button',
+        'blocks.prestations',
+        'blocks.stack'
+      ]
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProjectProject extends Schema.CollectionType {
   collectionName: 'projects';
   info: {
@@ -1003,6 +1040,7 @@ declare module '@strapi/types' {
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
       'api::mission.mission': ApiMissionMission;
+      'api::page.page': ApiPagePage;
       'api::project.project': ApiProjectProject;
       'api::techno.techno': ApiTechnoTechno;
     }

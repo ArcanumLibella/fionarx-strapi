@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_separators",
+  "info": {
+    "displayName": "Separator",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "separator": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

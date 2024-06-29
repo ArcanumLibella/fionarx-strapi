@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_texts",
+  "info": {
+    "displayName": "Text",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "textContent": {
+      "type": "blocks"
+    }
+  }
+}

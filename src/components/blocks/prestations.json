@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_prestations",
+  "info": {
+    "displayName": "Prestations",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "cardsPrestation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.card-prestation"
+    }
+  }
+}
