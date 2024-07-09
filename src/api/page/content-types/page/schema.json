@@ -33,6 +33,11 @@
         "blocks.prestations",
         "blocks.stack"
       ]
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.metadata"
     }
   }
 }

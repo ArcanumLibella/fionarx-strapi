@@ -183,6 +183,18 @@ export interface GlobalSocials extends Schema.Component {
   };
 }
 
+export interface SeoMetadata extends Schema.Component {
+  collectionName: 'components_seo_metadata';
+  info: {
+    displayName: 'Metadata';
+    icon: 'globe';
+  };
+  attributes: {
+    metaTitle: Attribute.String;
+    metaDescription: Attribute.Text;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -201,6 +213,7 @@ declare module '@strapi/types' {
       'global.hero': GlobalHero;
       'global.menu': GlobalMenu;
       'global.socials': GlobalSocials;
+      'seo.metadata': SeoMetadata;
     }
   }
 }
