@@ -9,5 +9,9 @@ module.exports = ({ env }) => ({
         params: {
           Bucket: env("AWS_BUCKET", "fionarx-strapi-images"),
         },
-}, },
-}, });
+      }, },
+  },
+  seo: {
+    enabled: true,
+  },
+});

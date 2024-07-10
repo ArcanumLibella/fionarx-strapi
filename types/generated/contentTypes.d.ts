@@ -921,7 +921,7 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.stack'
       ]
     >;
-    metadata: Attribute.Component<'seo.metadata'>;
+    seo: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

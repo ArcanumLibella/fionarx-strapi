@@ -34,10 +34,10 @@
         "blocks.stack"
       ]
     },
-    "metadata": {
+    "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "seo.metadata"
+      "component": "shared.seo"
     }
   }
 }
