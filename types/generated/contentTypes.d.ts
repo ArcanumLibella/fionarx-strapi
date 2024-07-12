@@ -966,6 +966,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'api::techno.techno'
     >;
     links: Attribute.Component<'blocks.link', true>;
+    seo: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
