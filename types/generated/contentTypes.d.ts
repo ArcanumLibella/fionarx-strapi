@@ -932,6 +932,52 @@ export interface ApiPagePage extends Schema.CollectionType {
   };
 }
 
+export interface ApiPrestationPrestation extends Schema.CollectionType {
+  collectionName: 'prestations';
+  info: {
+    singularName: 'prestation';
+    pluralName: 'prestations';
+    displayName: 'Prestation';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.String;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.button',
+        'blocks.item-list',
+        'blocks.link',
+        'blocks.list',
+        'blocks.quote',
+        'blocks.separator',
+        'blocks.spacer',
+        'blocks.stack-item',
+        'blocks.stack',
+        'blocks.text'
+      ]
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::prestation.prestation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::prestation.prestation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProjectProject extends Schema.CollectionType {
   collectionName: 'projects';
   info: {
@@ -1043,6 +1089,7 @@ declare module '@strapi/types' {
       'api::global.global': ApiGlobalGlobal;
       'api::mission.mission': ApiMissionMission;
       'api::page.page': ApiPagePage;
+      'api::prestation.prestation': ApiPrestationPrestation;
       'api::project.project': ApiProjectProject;
       'api::techno.techno': ApiTechnoTechno;
     }

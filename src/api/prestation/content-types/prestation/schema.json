@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestations",
+  "info": {
+    "singularName": "prestation",
+    "pluralName": "prestations",
+    "displayName": "Prestation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.button",
+        "blocks.item-list",
+        "blocks.link",
+        "blocks.list",
+        "blocks.quote",
+        "blocks.separator",
+        "blocks.spacer",
+        "blocks.stack-item",
+        "blocks.stack",
+        "blocks.text"
+      ]
+    }
+  }
+}

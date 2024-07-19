@@ -149,10 +149,12 @@ export interface GlobalHero extends Schema.Component {
   info: {
     displayName: 'Hero';
     icon: 'house';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
     link: Attribute.String;
+    isMainTitle: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
@@ -174,12 +176,15 @@ export interface GlobalSocials extends Schema.Component {
   info: {
     displayName: 'Socials';
     icon: 'chartBubble';
+    description: '';
   };
   attributes: {
     linkedin: Attribute.String;
     malt: Attribute.String;
     github: Attribute.String;
     instagram: Attribute.String;
+    dribbble: Attribute.String;
+    behance: Attribute.String;
   };
 }
 
