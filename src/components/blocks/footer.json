@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.button"
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}

@@ -28,6 +28,19 @@ export interface BlocksCardPrestation extends Schema.Component {
   };
 }
 
+export interface BlocksFooter extends Schema.Component {
+  collectionName: 'components_blocks_footers';
+  info: {
+    displayName: 'Footer';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    button: Attribute.Component<'blocks.button'>;
+    content: Attribute.Blocks;
+  };
+}
+
 export interface BlocksItemList extends Schema.Component {
   collectionName: 'components_blocks_item_lists';
   info: {
@@ -256,6 +269,7 @@ declare module '@strapi/types' {
     export interface Components {
       'blocks.button': BlocksButton;
       'blocks.card-prestation': BlocksCardPrestation;
+      'blocks.footer': BlocksFooter;
       'blocks.item-list': BlocksItemList;
       'blocks.link': BlocksLink;
       'blocks.list': BlocksList;
