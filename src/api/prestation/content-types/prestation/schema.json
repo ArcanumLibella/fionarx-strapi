@@ -30,7 +30,8 @@
         "blocks.spacer",
         "blocks.stack-item",
         "blocks.stack",
-        "blocks.text"
+        "blocks.text",
+        "blocks.pricings"
       ]
     }
   }

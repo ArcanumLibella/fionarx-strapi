@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_blocks_pricing_cards",
+  "info": {
+    "displayName": "PricingCard",
+    "icon": "shoppingCart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "formula": {
+      "type": "string"
+    },
+    "isFrom": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    },
+    "item4": {
+      "type": "string"
+    },
+    "item5": {
+      "type": "string"
+    },
+    "item6": {
+      "type": "string"
+    }
+  }
+}

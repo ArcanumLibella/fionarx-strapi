@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_pricings",
+  "info": {
+    "displayName": "Pricings",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pricingCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.pricing-card"
+    },
+    "title": {
+      "type": "text"
+    }
+  }
+}

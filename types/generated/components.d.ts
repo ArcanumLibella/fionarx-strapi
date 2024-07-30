@@ -89,6 +89,41 @@ export interface BlocksPrestations extends Schema.Component {
   };
 }
 
+export interface BlocksPricingCard extends Schema.Component {
+  collectionName: 'components_blocks_pricing_cards';
+  info: {
+    displayName: 'PricingCard';
+    icon: 'shoppingCart';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    slug: Attribute.String;
+    formula: Attribute.String;
+    isFrom: Attribute.Boolean & Attribute.DefaultTo<false>;
+    price: Attribute.Integer & Attribute.Required;
+    item1: Attribute.String;
+    item2: Attribute.String;
+    item3: Attribute.String;
+    item4: Attribute.String;
+    item5: Attribute.String;
+    item6: Attribute.String;
+  };
+}
+
+export interface BlocksPricings extends Schema.Component {
+  collectionName: 'components_blocks_pricings';
+  info: {
+    displayName: 'Pricings';
+    icon: 'grid';
+    description: '';
+  };
+  attributes: {
+    pricingCards: Attribute.Component<'blocks.pricing-card', true>;
+    title: Attribute.Text;
+  };
+}
+
 export interface BlocksQuote extends Schema.Component {
   collectionName: 'components_blocks_quotes';
   info: {
@@ -274,6 +309,8 @@ declare module '@strapi/types' {
       'blocks.link': BlocksLink;
       'blocks.list': BlocksList;
       'blocks.prestations': BlocksPrestations;
+      'blocks.pricing-card': BlocksPricingCard;
+      'blocks.pricings': BlocksPricings;
       'blocks.quote': BlocksQuote;
       'blocks.separator': BlocksSeparator;
       'blocks.spacer': BlocksSpacer;
