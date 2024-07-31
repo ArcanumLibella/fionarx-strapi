@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_foot_notes",
+  "info": {
+    "displayName": "FootNote",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "note": {
+      "type": "blocks"
+    }
+  }
+}

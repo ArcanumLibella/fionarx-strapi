@@ -959,7 +959,8 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.stack-item',
         'blocks.stack',
         'blocks.text',
-        'blocks.pricings'
+        'blocks.pricings',
+        'blocks.foot-note'
       ]
     >;
     createdAt: Attribute.DateTime;
