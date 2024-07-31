@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_images_sliders",
+  "info": {
+    "displayName": "ImagesSlider",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -32,7 +32,8 @@
         "blocks.stack",
         "blocks.text",
         "blocks.pricings",
-        "blocks.foot-note"
+        "blocks.foot-note",
+        "blocks.images-slider"
       ]
     }
   }
