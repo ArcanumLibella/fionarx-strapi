@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_stages",
+  "info": {
+    "displayName": "Stages",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.stage"
+    }
+  }
+}

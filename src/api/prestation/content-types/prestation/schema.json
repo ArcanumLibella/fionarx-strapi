@@ -33,7 +33,8 @@
         "blocks.text",
         "blocks.pricings",
         "blocks.foot-note",
-        "blocks.images-slider"
+        "blocks.images-slider",
+        "blocks.stages"
       ]
     }
   }

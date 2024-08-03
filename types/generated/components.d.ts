@@ -204,6 +204,32 @@ export interface BlocksStack extends Schema.Component {
   };
 }
 
+export interface BlocksStage extends Schema.Component {
+  collectionName: 'components_blocks_stage';
+  info: {
+    displayName: 'Stage';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    number: Attribute.Integer;
+    title: Attribute.String;
+    description: Attribute.Blocks;
+  };
+}
+
+export interface BlocksStages extends Schema.Component {
+  collectionName: 'components_blocks_stages';
+  info: {
+    displayName: 'Stages';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    stages: Attribute.Component<'blocks.stage', true>;
+  };
+}
+
 export interface BlocksText extends Schema.Component {
   collectionName: 'components_blocks_texts';
   info: {
@@ -341,6 +367,8 @@ declare module '@strapi/types' {
       'blocks.spacer': BlocksSpacer;
       'blocks.stack-item': BlocksStackItem;
       'blocks.stack': BlocksStack;
+      'blocks.stage': BlocksStage;
+      'blocks.stages': BlocksStages;
       'blocks.text': BlocksText;
       'global.hero': GlobalHero;
       'global.menu': GlobalMenu;
