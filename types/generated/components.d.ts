@@ -152,9 +152,10 @@ export interface BlocksQuote extends Schema.Component {
   info: {
     displayName: 'Quote';
     icon: 'quote';
+    description: '';
   };
   attributes: {
-    quoteContent: Attribute.Text & Attribute.Required;
+    quotes: Attribute.Blocks;
   };
 }
 

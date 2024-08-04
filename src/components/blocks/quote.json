@@ -2,13 +2,13 @@
   "collectionName": "components_blocks_quotes",
   "info": {
     "displayName": "Quote",
-    "icon": "quote"
+    "icon": "quote",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "quoteContent": {
-      "type": "text",
-      "required": true
+    "quotes": {
+      "type": "blocks"
     }
   }
 }
