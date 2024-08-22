@@ -64,6 +64,17 @@ export interface BlocksImagesSlider extends Schema.Component {
   };
 }
 
+export interface BlocksIntroduction extends Schema.Component {
+  collectionName: 'components_blocks_introductions';
+  info: {
+    displayName: 'Introduction';
+    icon: 'bold';
+  };
+  attributes: {
+    content: Attribute.Blocks;
+  };
+}
+
 export interface BlocksItemList extends Schema.Component {
   collectionName: 'components_blocks_item_lists';
   info: {
@@ -357,6 +368,7 @@ declare module '@strapi/types' {
       'blocks.foot-note': BlocksFootNote;
       'blocks.footer': BlocksFooter;
       'blocks.images-slider': BlocksImagesSlider;
+      'blocks.introduction': BlocksIntroduction;
       'blocks.item-list': BlocksItemList;
       'blocks.link': BlocksLink;
       'blocks.list': BlocksList;

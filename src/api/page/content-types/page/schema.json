@@ -31,7 +31,8 @@
         "blocks.list",
         "blocks.button",
         "blocks.prestations",
-        "blocks.stack"
+        "blocks.stack",
+        "blocks.foot-note"
       ]
     },
     "seo": {
@@ -43,6 +44,11 @@
       "type": "component",
       "repeatable": false,
       "component": "blocks.footer"
+    },
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.introduction"
     }
   }
 }

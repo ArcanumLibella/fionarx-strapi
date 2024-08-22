@@ -918,11 +918,13 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.list',
         'blocks.button',
         'blocks.prestations',
-        'blocks.stack'
+        'blocks.stack',
+        'blocks.foot-note'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
     footer: Attribute.Component<'blocks.footer'>;
+    introduction: Attribute.Component<'blocks.introduction'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

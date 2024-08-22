@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_introductions",
+  "info": {
+    "displayName": "Introduction",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    }
+  }
+}
