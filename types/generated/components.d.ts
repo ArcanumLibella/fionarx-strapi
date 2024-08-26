@@ -171,6 +171,19 @@ export interface BlocksQuote extends Schema.Component {
   };
 }
 
+export interface BlocksSectionCta extends Schema.Component {
+  collectionName: 'components_blocks_section_ctas';
+  info: {
+    displayName: 'SectionCTA';
+    icon: 'apps';
+  };
+  attributes: {
+    title: Attribute.Text;
+    subtitle: Attribute.Text;
+    button: Attribute.Component<'blocks.button'>;
+  };
+}
+
 export interface BlocksSeparator extends Schema.Component {
   collectionName: 'components_blocks_separators';
   info: {
@@ -377,6 +390,7 @@ declare module '@strapi/types' {
       'blocks.pricing-card': BlocksPricingCard;
       'blocks.pricings': BlocksPricings;
       'blocks.quote': BlocksQuote;
+      'blocks.section-cta': BlocksSectionCta;
       'blocks.separator': BlocksSeparator;
       'blocks.spacer': BlocksSpacer;
       'blocks.stack-item': BlocksStackItem;

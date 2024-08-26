@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_section_ctas",
+  "info": {
+    "displayName": "SectionCTA",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.button"
+    }
+  }
+}

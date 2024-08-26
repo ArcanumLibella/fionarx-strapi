@@ -977,8 +977,8 @@ export interface ApiPagePage extends Schema.CollectionType {
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
-    footer: Attribute.Component<'blocks.footer'>;
     introduction: Attribute.Component<'blocks.introduction'>;
+    sectionCTA: Attribute.Component<'blocks.section-cta'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
