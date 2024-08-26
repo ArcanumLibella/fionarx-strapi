@@ -118,9 +118,11 @@ export interface BlocksPrestations extends Schema.Component {
   info: {
     displayName: 'Prestations';
     icon: 'grid';
+    description: '';
   };
   attributes: {
     cardsPrestation: Attribute.Component<'blocks.card-prestation', true>;
+    title: Attribute.Text;
   };
 }
 
