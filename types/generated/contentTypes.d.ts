@@ -973,7 +973,11 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.button',
         'blocks.prestations',
         'blocks.stack',
-        'blocks.foot-note'
+        'blocks.foot-note',
+        'blocks.pricing-card',
+        'blocks.pricings',
+        'blocks.stage',
+        'blocks.stages'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
