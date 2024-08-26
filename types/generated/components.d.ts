@@ -49,7 +49,8 @@ export interface BlocksFooter extends Schema.Component {
   };
   attributes: {
     button: Attribute.Component<'blocks.button'>;
-    content: Attribute.Blocks;
+    title: Attribute.Text;
+    subtitle: Attribute.Text;
   };
 }
 

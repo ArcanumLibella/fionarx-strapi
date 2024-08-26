@@ -788,6 +788,60 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiAccompagnementAccompagnement extends Schema.CollectionType {
+  collectionName: 'accompagnements';
+  info: {
+    singularName: 'accompagnement';
+    pluralName: 'accompagnements';
+    displayName: 'Accompagnement';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.String;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.button',
+        'blocks.card-prestation',
+        'blocks.foot-note',
+        'blocks.introduction',
+        'blocks.item-list',
+        'blocks.link',
+        'blocks.list',
+        'blocks.pricing-card',
+        'blocks.pricings',
+        'blocks.quote',
+        'blocks.separator',
+        'blocks.spacer',
+        'blocks.stack-item',
+        'blocks.stack',
+        'blocks.stage',
+        'blocks.stages',
+        'blocks.text'
+      ]
+    >;
+    seo: Attribute.Component<'shared.seo'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::accompagnement.accompagnement',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::accompagnement.accompagnement',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiCategoryCategory extends Schema.CollectionType {
   collectionName: 'categories';
   info: {
@@ -1093,6 +1147,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::accompagnement.accompagnement': ApiAccompagnementAccompagnement;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
       'api::mission.mission': ApiMissionMission;

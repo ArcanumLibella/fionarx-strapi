@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accompagnements",
+  "info": {
+    "singularName": "accompagnement",
+    "pluralName": "accompagnements",
+    "displayName": "Accompagnement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.button",
+        "blocks.card-prestation",
+        "blocks.foot-note",
+        "blocks.introduction",
+        "blocks.item-list",
+        "blocks.link",
+        "blocks.list",
+        "blocks.pricing-card",
+        "blocks.pricings",
+        "blocks.quote",
+        "blocks.separator",
+        "blocks.spacer",
+        "blocks.stack-item",
+        "blocks.stack",
+        "blocks.stage",
+        "blocks.stages",
+        "blocks.text"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

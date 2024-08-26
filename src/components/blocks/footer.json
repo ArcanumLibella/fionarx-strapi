@@ -12,8 +12,11 @@
       "repeatable": false,
       "component": "blocks.button"
     },
-    "content": {
-      "type": "blocks"
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
     }
   }
 }
