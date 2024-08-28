@@ -34,13 +34,20 @@
         "blocks.pricings",
         "blocks.foot-note",
         "blocks.images-slider",
-        "blocks.stages"
+        "blocks.stages",
+        "blocks.introduction",
+        "blocks.prestations"
       ]
     },
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.introduction"
     }
   }
 }

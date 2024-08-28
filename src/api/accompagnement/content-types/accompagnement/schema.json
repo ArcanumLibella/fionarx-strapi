@@ -24,7 +24,6 @@
         "blocks.button",
         "blocks.card-prestation",
         "blocks.foot-note",
-        "blocks.introduction",
         "blocks.item-list",
         "blocks.link",
         "blocks.list",
@@ -44,6 +43,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.introduction"
     }
   }
 }

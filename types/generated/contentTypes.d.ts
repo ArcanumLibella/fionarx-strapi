@@ -807,7 +807,6 @@ export interface ApiAccompagnementAccompagnement extends Schema.CollectionType {
         'blocks.button',
         'blocks.card-prestation',
         'blocks.foot-note',
-        'blocks.introduction',
         'blocks.item-list',
         'blocks.link',
         'blocks.list',
@@ -824,6 +823,7 @@ export interface ApiAccompagnementAccompagnement extends Schema.CollectionType {
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
+    introduction: Attribute.Component<'blocks.introduction'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1022,10 +1022,13 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.pricings',
         'blocks.foot-note',
         'blocks.images-slider',
-        'blocks.stages'
+        'blocks.stages',
+        'blocks.introduction',
+        'blocks.prestations'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
+    introduction: Attribute.Component<'blocks.introduction'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
