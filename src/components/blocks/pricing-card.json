@@ -54,6 +54,12 @@
     },
     "time": {
       "type": "integer"
+    },
+    "supportTitle": {
+      "type": "string"
+    },
+    "supportDescription": {
+      "type": "string"
     }
   }
 }
