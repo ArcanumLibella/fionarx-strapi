@@ -145,6 +145,10 @@ export interface BlocksPricingCard extends Schema.Component {
     item4: Attribute.String;
     item5: Attribute.String;
     item6: Attribute.String;
+    item7: Attribute.String;
+    item8: Attribute.String;
+    item9: Attribute.String;
+    time: Attribute.Integer;
   };
 }
 
@@ -158,6 +162,7 @@ export interface BlocksPricings extends Schema.Component {
   attributes: {
     pricingCards: Attribute.Component<'blocks.pricing-card', true>;
     title: Attribute.Text;
+    description: Attribute.Text;
   };
 }
 

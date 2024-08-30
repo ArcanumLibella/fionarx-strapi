@@ -42,6 +42,18 @@
     },
     "item6": {
       "type": "string"
+    },
+    "item7": {
+      "type": "string"
+    },
+    "item8": {
+      "type": "string"
+    },
+    "item9": {
+      "type": "string"
+    },
+    "time": {
+      "type": "integer"
     }
   }
 }
