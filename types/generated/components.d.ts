@@ -151,6 +151,7 @@ export interface BlocksPricingCard extends Schema.Component {
     time: Attribute.Integer;
     supportTitle: Attribute.String;
     supportDescription: Attribute.String;
+    description: Attribute.Blocks;
   };
 }
 

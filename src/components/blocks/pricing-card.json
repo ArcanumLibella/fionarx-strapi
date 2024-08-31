@@ -60,6 +60,9 @@
     },
     "supportDescription": {
       "type": "string"
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }
