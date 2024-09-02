@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_accordions_groups",
+  "info": {
+    "displayName": "AccordionsGroup",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "accordion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.accordion"
+    }
+  }
+}

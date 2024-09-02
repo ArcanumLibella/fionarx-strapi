@@ -36,7 +36,8 @@
         "blocks.images-slider",
         "blocks.stages",
         "blocks.introduction",
-        "blocks.prestations"
+        "blocks.prestations",
+        "blocks.accordions-group"
       ]
     },
     "seo": {
@@ -48,6 +49,12 @@
       "type": "component",
       "repeatable": false,
       "component": "blocks.introduction"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "target": {
+      "type": "text"
     }
   }
 }

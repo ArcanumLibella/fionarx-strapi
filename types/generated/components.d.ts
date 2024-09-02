@@ -1,5 +1,30 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface BlocksAccordion extends Schema.Component {
+  collectionName: 'components_blocks_accordions';
+  info: {
+    displayName: 'Accordion';
+    icon: 'grid';
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.String;
+    features: Attribute.Blocks;
+    deliverables: Attribute.Blocks;
+  };
+}
+
+export interface BlocksAccordionsGroup extends Schema.Component {
+  collectionName: 'components_blocks_accordions_groups';
+  info: {
+    displayName: 'AccordionsGroup';
+    icon: 'grid';
+  };
+  attributes: {
+    accordion: Attribute.Component<'blocks.accordion', true>;
+  };
+}
+
 export interface BlocksButton extends Schema.Component {
   collectionName: 'components_blocks_buttons';
   info: {
@@ -387,6 +412,8 @@ export interface SharedSeo extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'blocks.accordion': BlocksAccordion;
+      'blocks.accordions-group': BlocksAccordionsGroup;
       'blocks.button': BlocksButton;
       'blocks.card-prestation': BlocksCardPrestation;
       'blocks.foot-note': BlocksFootNote;
