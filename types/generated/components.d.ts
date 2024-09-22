@@ -53,6 +53,29 @@ export interface BlocksCardPrestation extends Schema.Component {
   };
 }
 
+export interface BlocksCheckLists extends Schema.Component {
+  collectionName: 'components_blocks_check_lists';
+  info: {
+    displayName: 'Checklists';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    checklists: Attribute.Component<'blocks.checklist', true>;
+  };
+}
+
+export interface BlocksChecklist extends Schema.Component {
+  collectionName: 'components_blocks_checklists';
+  info: {
+    displayName: 'Checklist';
+    icon: 'check';
+  };
+  attributes: {
+    content: Attribute.Blocks;
+  };
+}
+
 export interface BlocksFootNote extends Schema.Component {
   collectionName: 'components_blocks_foot_notes';
   info: {
@@ -76,6 +99,21 @@ export interface BlocksFooter extends Schema.Component {
     button: Attribute.Component<'blocks.button'>;
     title: Attribute.Text;
     subtitle: Attribute.Text;
+  };
+}
+
+export interface BlocksFormulaPack extends Schema.Component {
+  collectionName: 'components_blocks_lists';
+  info: {
+    displayName: 'FormulaPack';
+    icon: 'archive';
+    description: '';
+  };
+  attributes: {
+    items: Attribute.Component<'blocks.item-list', true>;
+    mentoringTitle: Attribute.Text;
+    mentoringSubtitle: Attribute.Text;
+    mentoringDescription: Attribute.Text;
   };
 }
 
@@ -110,7 +148,7 @@ export interface BlocksItemList extends Schema.Component {
   };
   attributes: {
     number: Attribute.String & Attribute.Required;
-    text: Attribute.Text & Attribute.Required;
+    content: Attribute.Blocks;
   };
 }
 
@@ -124,17 +162,6 @@ export interface BlocksLink extends Schema.Component {
     name: Attribute.String;
     url: Attribute.String;
     isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
-  };
-}
-
-export interface BlocksList extends Schema.Component {
-  collectionName: 'components_blocks_lists';
-  info: {
-    displayName: 'List';
-    icon: 'bulletList';
-  };
-  attributes: {
-    item: Attribute.Component<'blocks.item-list', true>;
   };
 }
 
@@ -416,13 +443,15 @@ declare module '@strapi/types' {
       'blocks.accordions-group': BlocksAccordionsGroup;
       'blocks.button': BlocksButton;
       'blocks.card-prestation': BlocksCardPrestation;
+      'blocks.check-lists': BlocksCheckLists;
+      'blocks.checklist': BlocksChecklist;
       'blocks.foot-note': BlocksFootNote;
       'blocks.footer': BlocksFooter;
+      'blocks.formula-pack': BlocksFormulaPack;
       'blocks.images-slider': BlocksImagesSlider;
       'blocks.introduction': BlocksIntroduction;
       'blocks.item-list': BlocksItemList;
       'blocks.link': BlocksLink;
-      'blocks.list': BlocksList;
       'blocks.prestations': BlocksPrestations;
       'blocks.pricing-card': BlocksPricingCard;
       'blocks.pricings': BlocksPricings;

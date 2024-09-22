@@ -12,9 +12,8 @@
       "required": true,
       "unique": false
     },
-    "text": {
-      "type": "text",
-      "required": true
+    "content": {
+      "type": "blocks"
     }
   }
 }

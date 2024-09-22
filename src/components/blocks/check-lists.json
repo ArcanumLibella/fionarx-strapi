@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_check_lists",
+  "info": {
+    "displayName": "Checklists",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "checklists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.checklist"
+    }
+  }
+}

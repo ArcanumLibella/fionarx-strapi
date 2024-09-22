@@ -959,7 +959,7 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.button',
         'blocks.item-list',
         'blocks.link',
-        'blocks.list',
+        'blocks.formula-pack',
         'blocks.quote',
         'blocks.separator',
         'blocks.spacer',
@@ -972,7 +972,8 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.stages',
         'blocks.introduction',
         'blocks.prestations',
-        'blocks.accordions-group'
+        'blocks.accordions-group',
+        'blocks.check-lists'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;

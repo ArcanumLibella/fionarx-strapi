@@ -24,7 +24,7 @@
         "blocks.button",
         "blocks.item-list",
         "blocks.link",
-        "blocks.list",
+        "blocks.formula-pack",
         "blocks.quote",
         "blocks.separator",
         "blocks.spacer",
@@ -37,7 +37,8 @@
         "blocks.stages",
         "blocks.introduction",
         "blocks.prestations",
-        "blocks.accordions-group"
+        "blocks.accordions-group",
+        "blocks.check-lists"
       ]
     },
     "seo": {

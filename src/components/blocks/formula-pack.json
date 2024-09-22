@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_lists",
+  "info": {
+    "displayName": "FormulaPack",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.item-list"
+    },
+    "mentoringTitle": {
+      "type": "text"
+    },
+    "mentoringSubtitle": {
+      "type": "text"
+    },
+    "mentoringDescription": {
+      "type": "text"
+    }
+  }
+}

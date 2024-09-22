@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_checklists",
+  "info": {
+    "displayName": "Checklist",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    }
+  }
+}
