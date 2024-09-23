@@ -103,7 +103,7 @@ export interface BlocksFooter extends Schema.Component {
 }
 
 export interface BlocksFormulaPack extends Schema.Component {
-  collectionName: 'components_blocks_formula_packs';
+  collectionName: 'components_blocks_formula-packs';
   info: {
     displayName: 'FormulaPack';
     icon: 'archive';

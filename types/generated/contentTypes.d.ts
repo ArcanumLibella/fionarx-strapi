@@ -915,7 +915,7 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.quote',
         'blocks.separator',
         'blocks.spacer',
-        'blocks.list',
+        'blocks.formula-pack',
         'blocks.button',
         'blocks.prestations',
         'blocks.stack',
