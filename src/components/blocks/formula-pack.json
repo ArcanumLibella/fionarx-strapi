@@ -20,6 +20,15 @@
     },
     "mentoringDescription": {
       "type": "text"
+    },
+    "ctaTitle": {
+      "type": "string"
+    },
+    "ctaPricing": {
+      "type": "string"
+    },
+    "ctaDetail": {
+      "type": "string"
     }
   }
 }

@@ -114,6 +114,9 @@ export interface BlocksFormulaPack extends Schema.Component {
     mentoringTitle: Attribute.Text;
     mentoringSubtitle: Attribute.Text;
     mentoringDescription: Attribute.Text;
+    ctaTitle: Attribute.String;
+    ctaPricing: Attribute.String;
+    ctaDetail: Attribute.String;
   };
 }
 
