@@ -29,6 +29,16 @@
     },
     "ctaDetail": {
       "type": "string"
+    },
+    "hasSupport": {
+      "type": "boolean",
+      "default": false
+    },
+    "supportTitle": {
+      "type": "string"
+    },
+    "supportDescription": {
+      "type": "string"
     }
   }
 }

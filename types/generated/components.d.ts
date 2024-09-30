@@ -117,6 +117,9 @@ export interface BlocksFormulaPack extends Schema.Component {
     ctaTitle: Attribute.String;
     ctaPricing: Attribute.String;
     ctaDetail: Attribute.String;
+    hasSupport: Attribute.Boolean & Attribute.DefaultTo<false>;
+    supportTitle: Attribute.String;
+    supportDescription: Attribute.String;
   };
 }
 
