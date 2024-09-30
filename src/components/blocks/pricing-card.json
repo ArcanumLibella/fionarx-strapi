@@ -63,6 +63,17 @@
     },
     "description": {
       "type": "blocks"
+    },
+    "hasSupport": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "mentoringTitle": {
+      "type": "string"
+    },
+    "mentoringDescription": {
+      "type": "string"
     }
   }
 }
