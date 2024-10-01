@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_options",
+  "info": {
+    "displayName": "Options",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.card-option"
+    }
+  }
+}

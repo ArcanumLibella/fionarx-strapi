@@ -924,7 +924,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.pricings',
         'blocks.stage',
         'blocks.stages',
-        'blocks.section-cta'
+        'blocks.section-cta',
+        'blocks.options'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;

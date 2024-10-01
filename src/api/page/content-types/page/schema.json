@@ -37,7 +37,8 @@
         "blocks.pricings",
         "blocks.stage",
         "blocks.stages",
-        "blocks.section-cta"
+        "blocks.section-cta",
+        "blocks.options"
       ]
     },
     "seo": {

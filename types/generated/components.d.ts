@@ -56,6 +56,23 @@ export interface BlocksCardCta extends Schema.Component {
   };
 }
 
+export interface BlocksCardOption extends Schema.Component {
+  collectionName: 'components_blocks_card_options';
+  info: {
+    displayName: 'CardOption';
+    icon: 'grid';
+    description: '';
+  };
+  attributes: {
+    number: Attribute.String;
+    title: Attribute.String;
+    description: Attribute.Text;
+    ctaLabel: Attribute.String;
+    ctaLink: Attribute.String;
+    isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
 export interface BlocksCardPrestation extends Schema.Component {
   collectionName: 'components_blocks_card_prestations';
   info: {
@@ -184,6 +201,18 @@ export interface BlocksLink extends Schema.Component {
     name: Attribute.String;
     url: Attribute.String;
     isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
+export interface BlocksOptions extends Schema.Component {
+  collectionName: 'components_blocks_options';
+  info: {
+    displayName: 'Options';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    options: Attribute.Component<'blocks.card-option', true>;
   };
 }
 
@@ -469,6 +498,7 @@ declare module '@strapi/types' {
       'blocks.accordions-group': BlocksAccordionsGroup;
       'blocks.button': BlocksButton;
       'blocks.card-cta': BlocksCardCta;
+      'blocks.card-option': BlocksCardOption;
       'blocks.card-prestation': BlocksCardPrestation;
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;
@@ -479,6 +509,7 @@ declare module '@strapi/types' {
       'blocks.introduction': BlocksIntroduction;
       'blocks.item-list': BlocksItemList;
       'blocks.link': BlocksLink;
+      'blocks.options': BlocksOptions;
       'blocks.prestations': BlocksPrestations;
       'blocks.pricing-card': BlocksPricingCard;
       'blocks.pricings': BlocksPricings;
