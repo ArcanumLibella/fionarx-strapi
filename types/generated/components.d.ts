@@ -40,6 +40,22 @@ export interface BlocksButton extends Schema.Component {
   };
 }
 
+export interface BlocksCardCta extends Schema.Component {
+  collectionName: 'components_blocks_card_ctas';
+  info: {
+    displayName: 'CardCTA';
+    icon: 'cursor';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.String;
+    buttonLabel: Attribute.String;
+    buttonSlug: Attribute.String;
+    isExternal: Attribute.Boolean;
+  };
+}
+
 export interface BlocksCardPrestation extends Schema.Component {
   collectionName: 'components_blocks_card_prestations';
   info: {
@@ -227,6 +243,7 @@ export interface BlocksPricings extends Schema.Component {
     pricingCards: Attribute.Component<'blocks.pricing-card', true>;
     title: Attribute.Text;
     description: Attribute.Text;
+    cardCTA: Attribute.Component<'blocks.card-cta'>;
   };
 }
 
@@ -451,6 +468,7 @@ declare module '@strapi/types' {
       'blocks.accordion': BlocksAccordion;
       'blocks.accordions-group': BlocksAccordionsGroup;
       'blocks.button': BlocksButton;
+      'blocks.card-cta': BlocksCardCta;
       'blocks.card-prestation': BlocksCardPrestation;
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;
