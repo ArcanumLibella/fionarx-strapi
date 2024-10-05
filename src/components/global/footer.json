@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.menu"
+    },
+    "legalInformation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.menu"
+    }
+  }
+}

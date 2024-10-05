@@ -386,6 +386,22 @@ export interface BlocksText extends Schema.Component {
   };
 }
 
+export interface GlobalFooter extends Schema.Component {
+  collectionName: 'components_global_footers';
+  info: {
+    displayName: 'Footer';
+    icon: 'grid';
+  };
+  attributes: {
+    title: Attribute.String;
+    role: Attribute.String;
+    location: Attribute.String;
+    mail: Attribute.String;
+    menu: Attribute.Component<'global.menu', true>;
+    legalInformation: Attribute.Component<'global.menu', true>;
+  };
+}
+
 export interface GlobalHero extends Schema.Component {
   collectionName: 'components_global_heroes';
   info: {
@@ -524,6 +540,7 @@ declare module '@strapi/types' {
       'blocks.stage': BlocksStage;
       'blocks.stages': BlocksStages;
       'blocks.text': BlocksText;
+      'global.footer': GlobalFooter;
       'global.hero': GlobalHero;
       'global.menu': GlobalMenu;
       'global.socials': GlobalSocials;

@@ -840,6 +840,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     hero: Attribute.Component<'global.hero', true>;
     menu: Attribute.Component<'global.menu', true>;
     socials: Attribute.Component<'global.socials'>;
+    footer: Attribute.Component<'global.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
