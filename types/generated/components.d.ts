@@ -260,6 +260,9 @@ export interface BlocksPricingCard extends Schema.Component {
     hasSupport: Attribute.Boolean & Attribute.DefaultTo<false>;
     mentoringTitle: Attribute.String;
     mentoringDescription: Attribute.String;
+    isDisabled: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
   };
 }
 
