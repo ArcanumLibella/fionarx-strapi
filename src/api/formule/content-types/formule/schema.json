@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formules",
+  "info": {
+    "singularName": "formule",
+    "pluralName": "formules",
+    "displayName": "Formule"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.button",
+        "blocks.item-list",
+        "blocks.link",
+        "blocks.formula-pack",
+        "blocks.quote",
+        "blocks.separator",
+        "blocks.spacer",
+        "blocks.stack-item",
+        "blocks.stack",
+        "blocks.text",
+        "blocks.pricings",
+        "blocks.foot-note",
+        "blocks.images-slider",
+        "blocks.introduction",
+        "blocks.prestations",
+        "blocks.accordions-group",
+        "blocks.check-lists"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.introduction"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "target": {
+      "type": "text"
+    }
+  }
+}

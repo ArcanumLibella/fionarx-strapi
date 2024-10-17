@@ -825,6 +825,62 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
   };
 }
 
+export interface ApiFormuleFormule extends Schema.CollectionType {
+  collectionName: 'formules';
+  info: {
+    singularName: 'formule';
+    pluralName: 'formules';
+    displayName: 'Formule';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.String;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.button',
+        'blocks.item-list',
+        'blocks.link',
+        'blocks.formula-pack',
+        'blocks.quote',
+        'blocks.separator',
+        'blocks.spacer',
+        'blocks.stack-item',
+        'blocks.stack',
+        'blocks.text',
+        'blocks.pricings',
+        'blocks.foot-note',
+        'blocks.images-slider',
+        'blocks.introduction',
+        'blocks.prestations',
+        'blocks.accordions-group',
+        'blocks.check-lists'
+      ]
+    >;
+    seo: Attribute.Component<'shared.seo'>;
+    introduction: Attribute.Component<'blocks.introduction'>;
+    vision: Attribute.String;
+    target: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::formule.formule',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::formule.formule',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Schema.SingleType {
   collectionName: 'globals';
   info: {
@@ -1108,6 +1164,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::category.category': ApiCategoryCategory;
+      'api::formule.formule': ApiFormuleFormule;
       'api::global.global': ApiGlobalGlobal;
       'api::mission.mission': ApiMissionMission;
       'api::page.page': ApiPagePage;
