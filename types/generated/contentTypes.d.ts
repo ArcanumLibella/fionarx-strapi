@@ -897,6 +897,21 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     menu: Attribute.Component<'global.menu', true>;
     socials: Attribute.Component<'global.socials'>;
     footer: Attribute.Component<'global.footer'>;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.text',
+        'blocks.prestations',
+        'blocks.section-cta',
+        'blocks.spacer',
+        'blocks.button',
+        'blocks.check-lists',
+        'blocks.introduction',
+        'blocks.separator',
+        'blocks.double-button'
+      ]
+    >;
+    sectionCTA: Attribute.Component<'blocks.section-cta'>;
+    introduction: Attribute.Component<'blocks.introduction'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_blocks_double_buttons",
+  "info": {
+    "displayName": "DoubleButton",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "firstButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.button"
+    },
+    "secondButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.button"
+    }
+  }
+}

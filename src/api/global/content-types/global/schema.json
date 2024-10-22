@@ -32,6 +32,30 @@
       "type": "component",
       "repeatable": false,
       "component": "global.footer"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.text",
+        "blocks.prestations",
+        "blocks.section-cta",
+        "blocks.spacer",
+        "blocks.button",
+        "blocks.check-lists",
+        "blocks.introduction",
+        "blocks.separator",
+        "blocks.double-button"
+      ]
+    },
+    "sectionCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.section-cta"
+    },
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.introduction"
     }
   }
 }

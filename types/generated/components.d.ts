@@ -109,6 +109,18 @@ export interface BlocksChecklist extends Schema.Component {
   };
 }
 
+export interface BlocksDoubleButton extends Schema.Component {
+  collectionName: 'components_blocks_double_buttons';
+  info: {
+    displayName: 'DoubleButton';
+    icon: 'cursor';
+  };
+  attributes: {
+    firstButton: Attribute.Component<'blocks.button'>;
+    secondButton: Attribute.Component<'blocks.button'>;
+  };
+}
+
 export interface BlocksFootNote extends Schema.Component {
   collectionName: 'components_blocks_foot_notes';
   info: {
@@ -523,6 +535,7 @@ declare module '@strapi/types' {
       'blocks.card-prestation': BlocksCardPrestation;
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;
+      'blocks.double-button': BlocksDoubleButton;
       'blocks.foot-note': BlocksFootNote;
       'blocks.footer': BlocksFooter;
       'blocks.formula-pack': BlocksFormulaPack;
