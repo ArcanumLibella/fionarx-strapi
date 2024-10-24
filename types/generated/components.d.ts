@@ -64,12 +64,13 @@ export interface BlocksCardOption extends Schema.Component {
     description: '';
   };
   attributes: {
-    number: Attribute.String;
     title: Attribute.String;
     description: Attribute.Text;
     ctaLabel: Attribute.String;
     ctaLink: Attribute.String;
     isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
+    tag: Attribute.String;
+    isLarge: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
 
