@@ -51,7 +51,7 @@
       "repeatable": false,
       "component": "blocks.introduction"
     },
-    "vision": {
+    "expertise": {
       "type": "string"
     },
     "target": {

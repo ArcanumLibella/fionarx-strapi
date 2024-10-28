@@ -1053,7 +1053,7 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
     >;
     seo: Attribute.Component<'shared.seo'>;
     introduction: Attribute.Component<'blocks.introduction'>;
-    vision: Attribute.String;
+    expertise: Attribute.String;
     target: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
