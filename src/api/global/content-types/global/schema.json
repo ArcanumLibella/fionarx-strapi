@@ -44,7 +44,8 @@
         "blocks.check-lists",
         "blocks.introduction",
         "blocks.separator",
-        "blocks.double-button"
+        "blocks.double-button",
+        "blocks.list"
       ]
     },
     "sectionCTA": {

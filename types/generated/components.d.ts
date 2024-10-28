@@ -217,6 +217,17 @@ export interface BlocksLink extends Schema.Component {
   };
 }
 
+export interface BlocksList extends Schema.Component {
+  collectionName: 'components_blocks_lists';
+  info: {
+    displayName: 'List';
+    icon: 'bulletList';
+  };
+  attributes: {
+    items: Attribute.Component<'blocks.item-list', true>;
+  };
+}
+
 export interface BlocksOptions extends Schema.Component {
   collectionName: 'components_blocks_options';
   info: {
@@ -544,6 +555,7 @@ declare module '@strapi/types' {
       'blocks.introduction': BlocksIntroduction;
       'blocks.item-list': BlocksItemList;
       'blocks.link': BlocksLink;
+      'blocks.list': BlocksList;
       'blocks.options': BlocksOptions;
       'blocks.prestations': BlocksPrestations;
       'blocks.pricing-card': BlocksPricingCard;

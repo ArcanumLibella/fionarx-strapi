@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_lists",
+  "info": {
+    "displayName": "List",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.item-list"
+    }
+  }
+}
