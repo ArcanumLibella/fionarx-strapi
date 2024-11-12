@@ -40,6 +40,20 @@ export interface BlocksButton extends Schema.Component {
   };
 }
 
+export interface BlocksCardBasic extends Schema.Component {
+  collectionName: 'components_blocks_card_basics';
+  info: {
+    displayName: 'CardBasic';
+    icon: 'plus';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    subtitle: Attribute.String;
+  };
+}
+
 export interface BlocksCardCta extends Schema.Component {
   collectionName: 'components_blocks_card_ctas';
   info: {
@@ -84,6 +98,17 @@ export interface BlocksCardPrestation extends Schema.Component {
     title: Attribute.String;
     description: Attribute.Text;
     slug: Attribute.String;
+  };
+}
+
+export interface BlocksCardsBasic extends Schema.Component {
+  collectionName: 'components_blocks_cards_basics';
+  info: {
+    displayName: 'CardsBasic';
+    icon: 'apps';
+  };
+  attributes: {
+    items: Attribute.Component<'blocks.card-basic', true>;
   };
 }
 
@@ -277,7 +302,6 @@ export interface BlocksPricingCard extends Schema.Component {
     item7: Attribute.String;
     item8: Attribute.String;
     item9: Attribute.String;
-    time: Attribute.Integer;
     supportTitle: Attribute.String;
     supportDescription: Attribute.String;
     description: Attribute.Blocks;
@@ -287,6 +311,7 @@ export interface BlocksPricingCard extends Schema.Component {
     isDisabled: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
+    duration: Attribute.String;
   };
 }
 
@@ -542,9 +567,11 @@ declare module '@strapi/types' {
       'blocks.accordion': BlocksAccordion;
       'blocks.accordions-group': BlocksAccordionsGroup;
       'blocks.button': BlocksButton;
+      'blocks.card-basic': BlocksCardBasic;
       'blocks.card-cta': BlocksCardCta;
       'blocks.card-option': BlocksCardOption;
       'blocks.card-prestation': BlocksCardPrestation;
+      'blocks.cards-basic': BlocksCardsBasic;
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;
       'blocks.double-button': BlocksDoubleButton;

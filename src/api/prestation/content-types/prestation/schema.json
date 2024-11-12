@@ -38,7 +38,8 @@
         "blocks.introduction",
         "blocks.prestations",
         "blocks.accordions-group",
-        "blocks.check-lists"
+        "blocks.check-lists",
+        "blocks.cards-basic"
       ]
     },
     "seo": {
@@ -54,8 +55,8 @@
     "expertise": {
       "type": "string"
     },
-    "target": {
-      "type": "text"
+    "subtitle": {
+      "type": "blocks"
     }
   }
 }
