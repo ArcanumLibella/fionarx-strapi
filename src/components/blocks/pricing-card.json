@@ -52,9 +52,6 @@
     "item9": {
       "type": "string"
     },
-    "time": {
-      "type": "integer"
-    },
     "supportTitle": {
       "type": "string"
     },
@@ -79,6 +76,9 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "duration": {
+      "type": "string"
     }
   }
 }
