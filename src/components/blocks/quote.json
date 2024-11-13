@@ -9,6 +9,9 @@
   "attributes": {
     "quotes": {
       "type": "blocks"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

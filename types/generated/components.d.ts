@@ -339,6 +339,7 @@ export interface BlocksQuote extends Schema.Component {
   };
   attributes: {
     quotes: Attribute.Blocks;
+    title: Attribute.String;
   };
 }
 
