@@ -1049,13 +1049,15 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.prestations',
         'blocks.accordions-group',
         'blocks.check-lists',
-        'blocks.cards-basic'
+        'blocks.cards-basic',
+        'blocks.section-cta'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
     introduction: Attribute.Component<'blocks.introduction'>;
     expertise: Attribute.String;
     subtitle: Attribute.Blocks;
+    sectionCTA: Attribute.Component<'blocks.section-cta'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

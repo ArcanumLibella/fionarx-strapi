@@ -39,7 +39,8 @@
         "blocks.prestations",
         "blocks.accordions-group",
         "blocks.check-lists",
-        "blocks.cards-basic"
+        "blocks.cards-basic",
+        "blocks.section-cta"
       ]
     },
     "seo": {
@@ -57,6 +58,11 @@
     },
     "subtitle": {
       "type": "blocks"
+    },
+    "sectionCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.section-cta"
     }
   }
 }
