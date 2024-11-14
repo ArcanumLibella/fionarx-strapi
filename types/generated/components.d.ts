@@ -147,6 +147,21 @@ export interface BlocksDoubleButton extends Schema.Component {
   };
 }
 
+export interface BlocksDoubleContent extends Schema.Component {
+  collectionName: 'components_blocks_double_contents';
+  info: {
+    displayName: 'DoubleContent';
+    icon: 'grid';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    text: Attribute.Blocks;
+    reverse: Attribute.Boolean;
+    button: Attribute.Component<'blocks.button'>;
+  };
+}
+
 export interface BlocksFootNote extends Schema.Component {
   collectionName: 'components_blocks_foot_notes';
   info: {
@@ -348,11 +363,13 @@ export interface BlocksSectionCta extends Schema.Component {
   info: {
     displayName: 'SectionCTA';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     title: Attribute.Text;
     subtitle: Attribute.Text;
     button: Attribute.Component<'blocks.button'>;
+    isLarge: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
@@ -576,6 +593,7 @@ declare module '@strapi/types' {
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;
       'blocks.double-button': BlocksDoubleButton;
+      'blocks.double-content': BlocksDoubleContent;
       'blocks.foot-note': BlocksFootNote;
       'blocks.footer': BlocksFooter;
       'blocks.formula-pack': BlocksFormulaPack;

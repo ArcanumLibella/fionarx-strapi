@@ -1050,7 +1050,8 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.accordions-group',
         'blocks.check-lists',
         'blocks.cards-basic',
-        'blocks.section-cta'
+        'blocks.section-cta',
+        'blocks.double-content'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;

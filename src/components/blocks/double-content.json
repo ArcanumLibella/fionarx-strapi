@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_blocks_double_contents",
+  "info": {
+    "displayName": "DoubleContent",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "reverse": {
+      "type": "boolean"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.button"
+    }
+  }
+}
