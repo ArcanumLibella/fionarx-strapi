@@ -327,6 +327,7 @@ export interface BlocksPricingCard extends Schema.Component {
       Attribute.Required &
       Attribute.DefaultTo<false>;
     duration: Attribute.String;
+    isMonthly: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 

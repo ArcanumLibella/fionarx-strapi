@@ -79,6 +79,10 @@
     },
     "duration": {
       "type": "string"
+    },
+    "isMonthly": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
