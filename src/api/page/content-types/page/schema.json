@@ -39,7 +39,8 @@
         "blocks.stages",
         "blocks.section-cta",
         "blocks.options",
-        "blocks.double-button"
+        "blocks.double-button",
+        "blocks.double-content"
       ]
     },
     "seo": {
