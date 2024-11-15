@@ -2,20 +2,15 @@
   "collectionName": "components_blocks_accordions",
   "info": {
     "displayName": "Accordion",
-    "icon": "grid"
+    "icon": "grid",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "slug": {
-      "type": "string"
-    },
-    "features": {
-      "type": "blocks"
-    },
-    "deliverables": {
+    "text": {
       "type": "blocks"
     }
   }

@@ -5,12 +5,11 @@ export interface BlocksAccordion extends Schema.Component {
   info: {
     displayName: 'Accordion';
     icon: 'grid';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
-    slug: Attribute.String;
-    features: Attribute.Blocks;
-    deliverables: Attribute.Blocks;
+    text: Attribute.Blocks;
   };
 }
 
