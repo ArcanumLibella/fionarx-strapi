@@ -29,6 +29,10 @@
     "isLarge": {
       "type": "boolean",
       "default": true
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

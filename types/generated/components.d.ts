@@ -84,6 +84,7 @@ export interface BlocksCardOption extends Schema.Component {
     isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
     tag: Attribute.String;
     isLarge: Attribute.Boolean & Attribute.DefaultTo<true>;
+    isDisabled: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
