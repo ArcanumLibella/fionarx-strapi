@@ -462,6 +462,7 @@ export interface GlobalFooter extends Schema.Component {
   info: {
     displayName: 'Footer';
     icon: 'grid';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
@@ -470,6 +471,7 @@ export interface GlobalFooter extends Schema.Component {
     mail: Attribute.String;
     menu: Attribute.Component<'global.menu', true>;
     legalInformation: Attribute.Component<'global.menu', true>;
+    prestations: Attribute.Component<'global.menu', true>;
   };
 }
 
