@@ -188,27 +188,6 @@ export interface BlocksFooter extends Schema.Component {
   };
 }
 
-export interface BlocksFormulaPack extends Schema.Component {
-  collectionName: 'components_blocks_formula-packs';
-  info: {
-    displayName: 'FormulaPack';
-    icon: 'archive';
-    description: '';
-  };
-  attributes: {
-    items: Attribute.Component<'blocks.item-list', true>;
-    mentoringTitle: Attribute.Text;
-    mentoringSubtitle: Attribute.Text;
-    mentoringDescription: Attribute.Text;
-    ctaTitle: Attribute.String;
-    ctaPricing: Attribute.String;
-    ctaDetail: Attribute.String;
-    hasSupport: Attribute.Boolean & Attribute.DefaultTo<false>;
-    supportTitle: Attribute.String;
-    supportDescription: Attribute.String;
-  };
-}
-
 export interface BlocksImagesSlider extends Schema.Component {
   collectionName: 'components_blocks_images_sliders';
   info: {
@@ -382,6 +361,27 @@ export interface BlocksSeparator extends Schema.Component {
   };
   attributes: {
     separator: Attribute.Boolean & Attribute.DefaultTo<true>;
+  };
+}
+
+export interface BlocksSolutionPack extends Schema.Component {
+  collectionName: 'components_blocks_solution-packs';
+  info: {
+    displayName: 'SolutionPack';
+    icon: 'archive';
+    description: '';
+  };
+  attributes: {
+    items: Attribute.Component<'blocks.item-list', true>;
+    mentoringTitle: Attribute.Text;
+    mentoringSubtitle: Attribute.Text;
+    mentoringDescription: Attribute.Text;
+    ctaTitle: Attribute.String;
+    ctaPricing: Attribute.String;
+    ctaDetail: Attribute.String;
+    hasSupport: Attribute.Boolean & Attribute.DefaultTo<false>;
+    supportTitle: Attribute.String;
+    supportDescription: Attribute.String;
   };
 }
 
@@ -599,7 +599,6 @@ declare module '@strapi/types' {
       'blocks.double-content': BlocksDoubleContent;
       'blocks.foot-note': BlocksFootNote;
       'blocks.footer': BlocksFooter;
-      'blocks.formula-pack': BlocksFormulaPack;
       'blocks.images-slider': BlocksImagesSlider;
       'blocks.introduction': BlocksIntroduction;
       'blocks.item-list': BlocksItemList;
@@ -612,6 +611,7 @@ declare module '@strapi/types' {
       'blocks.quote': BlocksQuote;
       'blocks.section-cta': BlocksSectionCta;
       'blocks.separator': BlocksSeparator;
+      'blocks.solution-pack': BlocksSolutionPack;
       'blocks.spacer': BlocksSpacer;
       'blocks.stack-item': BlocksStackItem;
       'blocks.stack': BlocksStack;

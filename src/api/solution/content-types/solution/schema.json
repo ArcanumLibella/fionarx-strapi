@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "formules",
+  "collectionName": "solutions",
   "info": {
-    "singularName": "formule",
-    "pluralName": "formules",
-    "displayName": "Formule"
+    "singularName": "solution",
+    "pluralName": "solutions",
+    "displayName": "Solution",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,19 @@
     },
     "slug": {
       "type": "string"
+    },
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.introduction"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     },
     "blocks": {
       "type": "dynamiczone",
@@ -38,19 +52,6 @@
         "blocks.accordions-group",
         "blocks.check-lists"
       ]
-    },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
-    },
-    "introduction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.introduction"
-    },
-    "vision": {
-      "type": "string"
     },
     "target": {
       "type": "text"

@@ -843,7 +843,7 @@ export interface ApiFormuleFormule extends Schema.CollectionType {
         'blocks.button',
         'blocks.item-list',
         'blocks.link',
-        'blocks.formula-pack',
+        'blocks.solution-pack',
         'blocks.quote',
         'blocks.separator',
         'blocks.spacer',
@@ -988,7 +988,7 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.quote',
         'blocks.separator',
         'blocks.spacer',
-        'blocks.formula-pack',
+        'blocks.solution-pack',
         'blocks.button',
         'blocks.prestations',
         'blocks.stack',
@@ -1035,7 +1035,7 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.button',
         'blocks.item-list',
         'blocks.link',
-        'blocks.formula-pack',
+        'blocks.solution-pack',
         'blocks.quote',
         'blocks.separator',
         'blocks.spacer',
@@ -1131,6 +1131,63 @@ export interface ApiProjectProject extends Schema.CollectionType {
   };
 }
 
+export interface ApiSolutionSolution extends Schema.CollectionType {
+  collectionName: 'solutions';
+  info: {
+    singularName: 'solution';
+    pluralName: 'solutions';
+    displayName: 'Solution';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.String;
+    introduction: Attribute.Component<'blocks.introduction'>;
+    vision: Attribute.String;
+    seo: Attribute.Component<'shared.seo'>;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.button',
+        'blocks.item-list',
+        'blocks.link',
+        'blocks.solution-pack',
+        'blocks.quote',
+        'blocks.separator',
+        'blocks.spacer',
+        'blocks.stack-item',
+        'blocks.stack',
+        'blocks.text',
+        'blocks.pricings',
+        'blocks.foot-note',
+        'blocks.images-slider',
+        'blocks.introduction',
+        'blocks.prestations',
+        'blocks.accordions-group',
+        'blocks.check-lists'
+      ]
+    >;
+    target: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::solution.solution',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::solution.solution',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTechnoTechno extends Schema.CollectionType {
   collectionName: 'technos';
   info: {
@@ -1192,6 +1249,7 @@ declare module '@strapi/types' {
       'api::page.page': ApiPagePage;
       'api::prestation.prestation': ApiPrestationPrestation;
       'api::project.project': ApiProjectProject;
+      'api::solution.solution': ApiSolutionSolution;
       'api::techno.techno': ApiTechnoTechno;
     }
   }
