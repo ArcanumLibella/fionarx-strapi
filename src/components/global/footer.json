@@ -29,7 +29,7 @@
       "repeatable": true,
       "component": "global.menu"
     },
-    "prestations": {
+    "formules": {
       "type": "component",
       "repeatable": true,
       "component": "global.menu"

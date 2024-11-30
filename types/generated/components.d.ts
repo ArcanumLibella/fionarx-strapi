@@ -471,7 +471,7 @@ export interface GlobalFooter extends Schema.Component {
     mail: Attribute.String;
     menu: Attribute.Component<'global.menu', true>;
     legalInformation: Attribute.Component<'global.menu', true>;
-    prestations: Attribute.Component<'global.menu', true>;
+    formules: Attribute.Component<'global.menu', true>;
   };
 }
 
@@ -516,18 +516,6 @@ export interface GlobalSocials extends Schema.Component {
     instagram: Attribute.String;
     dribbble: Attribute.String;
     behance: Attribute.String;
-  };
-}
-
-export interface SeoMetadata extends Schema.Component {
-  collectionName: 'components_seo_metadata';
-  info: {
-    displayName: 'Metadata';
-    icon: 'globe';
-  };
-  attributes: {
-    metaTitle: Attribute.String;
-    metaDescription: Attribute.Text;
   };
 }
 
@@ -622,7 +610,6 @@ declare module '@strapi/types' {
       'global.hero': GlobalHero;
       'global.menu': GlobalMenu;
       'global.socials': GlobalSocials;
-      'seo.metadata': SeoMetadata;
       'shared.meta-social': SharedMetaSocial;
       'shared.seo': SharedSeo;
     }
