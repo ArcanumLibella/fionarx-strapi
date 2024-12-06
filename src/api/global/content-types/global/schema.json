@@ -45,7 +45,9 @@
         "blocks.introduction",
         "blocks.separator",
         "blocks.double-button",
-        "blocks.list"
+        "blocks.list",
+        "blocks.quote",
+        "blocks.foot-note"
       ]
     },
     "sectionCTA": {
