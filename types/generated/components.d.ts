@@ -472,6 +472,7 @@ export interface GlobalFooter extends Schema.Component {
     menu: Attribute.Component<'global.menu', true>;
     legalInformation: Attribute.Component<'global.menu', true>;
     formules: Attribute.Component<'global.menu', true>;
+    google: Attribute.String;
   };
 }
 
