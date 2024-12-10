@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_blocks_card_basic_images",
+  "info": {
+    "displayName": "CardBasicImage",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "eye",
+        "smile",
+        "heart",
+        "target",
+        "dollar"
+      ]
+    }
+  }
+}

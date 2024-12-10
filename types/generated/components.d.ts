@@ -39,6 +39,20 @@ export interface BlocksButton extends Schema.Component {
   };
 }
 
+export interface BlocksCardBasicImage extends Schema.Component {
+  collectionName: 'components_blocks_card_basic_images';
+  info: {
+    displayName: 'CardBasicImage';
+    icon: 'grid';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    icon: Attribute.Enumeration<['eye', 'smile', 'heart', 'target', 'dollar']>;
+  };
+}
+
 export interface BlocksCardBasic extends Schema.Component {
   collectionName: 'components_blocks_card_basics';
   info: {
@@ -98,6 +112,17 @@ export interface BlocksCardPrestation extends Schema.Component {
     title: Attribute.String;
     description: Attribute.Text;
     slug: Attribute.String;
+  };
+}
+
+export interface BlocksCardsBasicImage extends Schema.Component {
+  collectionName: 'components_blocks_cards_basic_images';
+  info: {
+    displayName: 'CardsBasicImage';
+    icon: 'apps';
+  };
+  attributes: {
+    items: Attribute.Component<'blocks.card-basic-image', true>;
   };
 }
 
@@ -577,10 +602,12 @@ declare module '@strapi/types' {
       'blocks.accordion': BlocksAccordion;
       'blocks.accordions-group': BlocksAccordionsGroup;
       'blocks.button': BlocksButton;
+      'blocks.card-basic-image': BlocksCardBasicImage;
       'blocks.card-basic': BlocksCardBasic;
       'blocks.card-cta': BlocksCardCta;
       'blocks.card-option': BlocksCardOption;
       'blocks.card-prestation': BlocksCardPrestation;
+      'blocks.cards-basic-image': BlocksCardsBasicImage;
       'blocks.cards-basic': BlocksCardsBasic;
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;

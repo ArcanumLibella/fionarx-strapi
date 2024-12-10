@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_cards_basic_images",
+  "info": {
+    "displayName": "CardsBasicImage",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.card-basic-image"
+    }
+  }
+}

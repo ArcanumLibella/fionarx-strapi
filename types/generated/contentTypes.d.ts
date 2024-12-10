@@ -1002,7 +1002,11 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.section-cta',
         'blocks.options',
         'blocks.double-button',
-        'blocks.double-content'
+        'blocks.double-content',
+        'blocks.cards-basic',
+        'blocks.check-lists',
+        'blocks.list',
+        'blocks.cards-basic-image'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
