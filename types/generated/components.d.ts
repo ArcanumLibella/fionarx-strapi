@@ -49,7 +49,24 @@ export interface BlocksCardBasicImage extends Schema.Component {
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    icon: Attribute.Enumeration<['eye', 'smile', 'heart', 'target', 'dollar']>;
+    icon: Attribute.Enumeration<
+      [
+        'eye',
+        'smile',
+        'heart',
+        'target',
+        'dollar',
+        'award',
+        'barChart',
+        'clock',
+        'gift',
+        'globe',
+        'search',
+        'shoppingCart',
+        'thumbsUp',
+        'trendingUp'
+      ]
+    >;
   };
 }
 

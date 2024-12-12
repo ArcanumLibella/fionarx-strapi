@@ -1039,13 +1039,11 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
     blocks: Attribute.DynamicZone<
       [
         'blocks.button',
-        'blocks.item-list',
         'blocks.link',
         'blocks.solution-pack',
         'blocks.quote',
         'blocks.separator',
         'blocks.spacer',
-        'blocks.stack-item',
         'blocks.stack',
         'blocks.text',
         'blocks.pricings',
@@ -1058,7 +1056,8 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.check-lists',
         'blocks.cards-basic',
         'blocks.section-cta',
-        'blocks.double-content'
+        'blocks.double-content',
+        'blocks.cards-basic-image'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;

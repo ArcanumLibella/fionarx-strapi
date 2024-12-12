@@ -20,7 +20,16 @@
         "smile",
         "heart",
         "target",
-        "dollar"
+        "dollar",
+        "award",
+        "barChart",
+        "clock",
+        "gift",
+        "globe",
+        "search",
+        "shoppingCart",
+        "thumbsUp",
+        "trendingUp"
       ]
     }
   }
