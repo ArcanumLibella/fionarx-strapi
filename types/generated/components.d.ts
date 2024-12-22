@@ -230,6 +230,18 @@ export interface BlocksFooter extends Schema.Component {
   };
 }
 
+export interface BlocksImage extends Schema.Component {
+  collectionName: 'components_blocks_images';
+  info: {
+    displayName: 'image';
+    icon: 'picture';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface BlocksImagesSlider extends Schema.Component {
   collectionName: 'components_blocks_images_sliders';
   info: {
@@ -632,6 +644,7 @@ declare module '@strapi/types' {
       'blocks.double-content': BlocksDoubleContent;
       'blocks.foot-note': BlocksFootNote;
       'blocks.footer': BlocksFooter;
+      'blocks.image': BlocksImage;
       'blocks.images-slider': BlocksImagesSlider;
       'blocks.introduction': BlocksIntroduction;
       'blocks.item-list': BlocksItemList;
