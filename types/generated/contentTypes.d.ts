@@ -831,6 +831,7 @@ export interface ApiFormuleFormule extends Schema.CollectionType {
     singularName: 'formule';
     pluralName: 'formules';
     displayName: 'Formule';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -838,27 +839,6 @@ export interface ApiFormuleFormule extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     slug: Attribute.String;
-    blocks: Attribute.DynamicZone<
-      [
-        'blocks.button',
-        'blocks.item-list',
-        'blocks.link',
-        'blocks.solution-pack',
-        'blocks.quote',
-        'blocks.separator',
-        'blocks.spacer',
-        'blocks.stack-item',
-        'blocks.stack',
-        'blocks.text',
-        'blocks.pricings',
-        'blocks.foot-note',
-        'blocks.images-slider',
-        'blocks.introduction',
-        'blocks.prestations',
-        'blocks.accordions-group',
-        'blocks.check-lists'
-      ]
-    >;
     seo: Attribute.Component<'shared.seo'>;
     introduction: Attribute.Component<'blocks.introduction'>;
     vision: Attribute.String;
@@ -926,6 +906,39 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::global.global',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiLegalPolicyLegalPolicy extends Schema.CollectionType {
+  collectionName: 'legal_policies';
+  info: {
+    singularName: 'legal-policy';
+    pluralName: 'legal-policies';
+    displayName: 'Legal Policy';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.String;
+    blocks: Attribute.DynamicZone<['blocks.text']>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::legal-policy.legal-policy',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::legal-policy.legal-policy',
       'oneToOne',
       'admin::user'
     > &
@@ -1006,7 +1019,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.cards-basic',
         'blocks.check-lists',
         'blocks.list',
-        'blocks.cards-basic-image'
+        'blocks.cards-basic-image',
+        'blocks.image'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
@@ -1250,6 +1264,7 @@ declare module '@strapi/types' {
       'api::category.category': ApiCategoryCategory;
       'api::formule.formule': ApiFormuleFormule;
       'api::global.global': ApiGlobalGlobal;
+      'api::legal-policy.legal-policy': ApiLegalPolicyLegalPolicy;
       'api::mission.mission': ApiMissionMission;
       'api::page.page': ApiPagePage;
       'api::prestation.prestation': ApiPrestationPrestation;

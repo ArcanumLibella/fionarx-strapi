@@ -4,7 +4,8 @@
   "info": {
     "singularName": "formule",
     "pluralName": "formules",
-    "displayName": "Formule"
+    "displayName": "Formule",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,28 +17,6 @@
     },
     "slug": {
       "type": "string"
-    },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": [
-        "blocks.button",
-        "blocks.item-list",
-        "blocks.link",
-        "blocks.solution-pack",
-        "blocks.quote",
-        "blocks.separator",
-        "blocks.spacer",
-        "blocks.stack-item",
-        "blocks.stack",
-        "blocks.text",
-        "blocks.pricings",
-        "blocks.foot-note",
-        "blocks.images-slider",
-        "blocks.introduction",
-        "blocks.prestations",
-        "blocks.accordions-group",
-        "blocks.check-lists"
-      ]
     },
     "seo": {
       "type": "component",
