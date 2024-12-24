@@ -928,6 +928,7 @@ export interface ApiLegalPolicyLegalPolicy extends Schema.CollectionType {
     title: Attribute.String;
     slug: Attribute.String;
     blocks: Attribute.DynamicZone<['blocks.text']>;
+    seo: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
