@@ -1207,6 +1207,63 @@ export interface ApiSolutionSolution extends Schema.CollectionType {
   };
 }
 
+export interface ApiStrategieDigitaleStrategieDigitale
+  extends Schema.CollectionType {
+  collectionName: 'strategies_digitales';
+  info: {
+    singularName: 'strategie-digitale';
+    pluralName: 'strategies-digitales';
+    displayName: 'Strat\u00E9gie Digitale';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.String;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.button',
+        'blocks.quote',
+        'blocks.separator',
+        'blocks.text',
+        'blocks.pricings',
+        'blocks.foot-note',
+        'blocks.stages',
+        'blocks.introduction',
+        'blocks.prestations',
+        'blocks.accordions-group',
+        'blocks.cards-basic-image',
+        'blocks.cards-basic',
+        'blocks.section-cta',
+        'blocks.double-content',
+        'blocks.check-lists'
+      ]
+    >;
+    seo: Attribute.Component<'shared.seo'>;
+    content: Attribute.Component<'blocks.introduction'>;
+    expertise: Attribute.String;
+    subtitle: Attribute.Blocks;
+    sectionCTA: Attribute.Component<'blocks.section-cta'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::strategie-digitale.strategie-digitale',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::strategie-digitale.strategie-digitale',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTechnoTechno extends Schema.CollectionType {
   collectionName: 'technos';
   info: {
@@ -1270,6 +1327,7 @@ declare module '@strapi/types' {
       'api::prestation.prestation': ApiPrestationPrestation;
       'api::project.project': ApiProjectProject;
       'api::solution.solution': ApiSolutionSolution;
+      'api::strategie-digitale.strategie-digitale': ApiStrategieDigitaleStrategieDigitale;
       'api::techno.techno': ApiTechnoTechno;
     }
   }
