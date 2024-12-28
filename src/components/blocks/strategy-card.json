@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_blocks_strategy_cards",
+  "info": {
+    "displayName": "StrategyCard",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "isStrategyCard": {
+      "type": "boolean",
+      "default": false
+    },
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    },
+    "item4": {
+      "type": "string"
+    },
+    "item5": {
+      "type": "string"
+    },
+    "emoji": {
+      "type": "enumeration",
+      "enum": [
+        "emoji-bad",
+        "emoji-good"
+      ]
+    },
+    "short": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

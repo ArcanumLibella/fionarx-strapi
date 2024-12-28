@@ -45,7 +45,8 @@
         "blocks.check-lists",
         "blocks.list",
         "blocks.cards-basic-image",
-        "blocks.image"
+        "blocks.image",
+        "blocks.cards-strategy"
       ]
     },
     "seo": {

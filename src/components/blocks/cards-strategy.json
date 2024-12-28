@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_cards_strategy",
+  "info": {
+    "displayName": "CardsStrategy",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "strategyCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.strategy-card"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

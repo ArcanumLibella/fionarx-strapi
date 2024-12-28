@@ -154,6 +154,18 @@ export interface BlocksCardsBasic extends Schema.Component {
   };
 }
 
+export interface BlocksCardsStrategy extends Schema.Component {
+  collectionName: 'components_blocks_cards_strategy';
+  info: {
+    displayName: 'CardsStrategy';
+    icon: 'apps';
+  };
+  attributes: {
+    strategyCards: Attribute.Component<'blocks.strategy-card', true>;
+    title: Attribute.String;
+  };
+}
+
 export interface BlocksCheckLists extends Schema.Component {
   collectionName: 'components_blocks_check_lists';
   info: {
@@ -500,6 +512,28 @@ export interface BlocksStages extends Schema.Component {
   };
 }
 
+export interface BlocksStrategyCard extends Schema.Component {
+  collectionName: 'components_blocks_strategy_cards';
+  info: {
+    displayName: 'StrategyCard';
+    icon: 'grid';
+  };
+  attributes: {
+    type: Attribute.String;
+    title: Attribute.String;
+    description: Attribute.Text;
+    isStrategyCard: Attribute.Boolean & Attribute.DefaultTo<false>;
+    item1: Attribute.String;
+    item2: Attribute.String;
+    item3: Attribute.String;
+    item4: Attribute.String;
+    item5: Attribute.String;
+    emoji: Attribute.Enumeration<['emoji-bad', 'emoji-good']>;
+    short: Attribute.Text;
+    slug: Attribute.String;
+  };
+}
+
 export interface BlocksText extends Schema.Component {
   collectionName: 'components_blocks_texts';
   info: {
@@ -638,6 +672,7 @@ declare module '@strapi/types' {
       'blocks.card-prestation': BlocksCardPrestation;
       'blocks.cards-basic-image': BlocksCardsBasicImage;
       'blocks.cards-basic': BlocksCardsBasic;
+      'blocks.cards-strategy': BlocksCardsStrategy;
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;
       'blocks.double-button': BlocksDoubleButton;
@@ -663,6 +698,7 @@ declare module '@strapi/types' {
       'blocks.stack': BlocksStack;
       'blocks.stage': BlocksStage;
       'blocks.stages': BlocksStages;
+      'blocks.strategy-card': BlocksStrategyCard;
       'blocks.text': BlocksText;
       'global.footer': GlobalFooter;
       'global.hero': GlobalHero;
