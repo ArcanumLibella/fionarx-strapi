@@ -517,6 +517,7 @@ export interface BlocksStrategyCard extends Schema.Component {
   info: {
     displayName: 'StrategyCard';
     icon: 'grid';
+    description: '';
   };
   attributes: {
     type: Attribute.String;
@@ -531,6 +532,7 @@ export interface BlocksStrategyCard extends Schema.Component {
     emoji: Attribute.Enumeration<['emoji-bad', 'emoji-good']>;
     short: Attribute.Text;
     slug: Attribute.String;
+    isLastCard: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 

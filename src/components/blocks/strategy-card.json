@@ -2,7 +2,8 @@
   "collectionName": "components_blocks_strategy_cards",
   "info": {
     "displayName": "StrategyCard",
-    "icon": "grid"
+    "icon": "grid",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -46,6 +47,10 @@
     },
     "slug": {
       "type": "string"
+    },
+    "isLastCard": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
