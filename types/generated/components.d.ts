@@ -407,7 +407,6 @@ export interface BlocksPricings extends Schema.Component {
     pricingCards: Attribute.Component<'blocks.pricing-card', true>;
     title: Attribute.Text;
     cardCTA: Attribute.Component<'blocks.card-cta'>;
-    description: Attribute.Blocks;
   };
 }
 
