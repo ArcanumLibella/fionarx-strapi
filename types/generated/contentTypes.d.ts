@@ -1205,7 +1205,8 @@ export interface ApiSolutionSolution extends Schema.CollectionType {
         'blocks.introduction',
         'blocks.prestations',
         'blocks.accordions-group',
-        'blocks.check-lists'
+        'blocks.check-lists',
+        'blocks.pricing-pack'
       ]
     >;
     target: Attribute.Text;
