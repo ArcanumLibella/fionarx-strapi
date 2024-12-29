@@ -376,6 +376,26 @@ export interface BlocksPricingCard extends Schema.Component {
   };
 }
 
+export interface BlocksPricingPack extends Schema.Component {
+  collectionName: 'components_blocks_pricing_packs';
+  info: {
+    displayName: 'PricingPack';
+    icon: 'shoppingCart';
+  };
+  attributes: {
+    items: Attribute.Component<'blocks.item-list', true>;
+    mentoringTitle: Attribute.Text;
+    mentoringSubtitle: Attribute.Text;
+    mentoringDescription: Attribute.Text;
+    ctaTitle: Attribute.String;
+    ctaPricing: Attribute.String;
+    ctaDetail: Attribute.String;
+    hasSupport: Attribute.Boolean & Attribute.DefaultTo<false>;
+    supportTitle: Attribute.Text;
+    supportDescription: Attribute.Text;
+  };
+}
+
 export interface BlocksPricings extends Schema.Component {
   collectionName: 'components_blocks_pricings';
   info: {
@@ -386,8 +406,8 @@ export interface BlocksPricings extends Schema.Component {
   attributes: {
     pricingCards: Attribute.Component<'blocks.pricing-card', true>;
     title: Attribute.Text;
-    description: Attribute.Text;
     cardCTA: Attribute.Component<'blocks.card-cta'>;
+    description: Attribute.Blocks;
   };
 }
 
@@ -690,6 +710,7 @@ declare module '@strapi/types' {
       'blocks.options': BlocksOptions;
       'blocks.prestations': BlocksPrestations;
       'blocks.pricing-card': BlocksPricingCard;
+      'blocks.pricing-pack': BlocksPricingPack;
       'blocks.pricings': BlocksPricings;
       'blocks.quote': BlocksQuote;
       'blocks.section-cta': BlocksSectionCta;

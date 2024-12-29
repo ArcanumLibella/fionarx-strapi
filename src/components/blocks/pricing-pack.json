@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_blocks_pricing_packs",
+  "info": {
+    "displayName": "PricingPack",
+    "icon": "shoppingCart"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.item-list"
+    },
+    "mentoringTitle": {
+      "type": "text"
+    },
+    "mentoringSubtitle": {
+      "type": "text"
+    },
+    "mentoringDescription": {
+      "type": "text"
+    },
+    "ctaTitle": {
+      "type": "string"
+    },
+    "ctaPricing": {
+      "type": "string"
+    },
+    "ctaDetail": {
+      "type": "string"
+    },
+    "hasSupport": {
+      "type": "boolean",
+      "default": false
+    },
+    "supportTitle": {
+      "type": "text"
+    },
+    "supportDescription": {
+      "type": "text"
+    }
+  }
+}

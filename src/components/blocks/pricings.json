@@ -15,13 +15,13 @@
     "title": {
       "type": "text"
     },
-    "description": {
-      "type": "text"
-    },
     "cardCTA": {
       "type": "component",
       "repeatable": false,
       "component": "blocks.card-cta"
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }
