@@ -35,7 +35,8 @@
         "blocks.cards-basic",
         "blocks.section-cta",
         "blocks.double-content",
-        "blocks.check-lists"
+        "blocks.check-lists",
+        "blocks.pricing-pack"
       ]
     },
     "seo": {
