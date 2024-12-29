@@ -840,9 +840,27 @@ export interface ApiFormuleFormule extends Schema.CollectionType {
     title: Attribute.String;
     slug: Attribute.String;
     seo: Attribute.Component<'shared.seo'>;
-    introduction: Attribute.Component<'blocks.introduction'>;
     vision: Attribute.String;
-    target: Attribute.Text;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.button',
+        'blocks.check-lists',
+        'blocks.list',
+        'blocks.link',
+        'blocks.quote',
+        'blocks.section-cta',
+        'blocks.separator',
+        'blocks.text',
+        'blocks.images-slider',
+        'blocks.foot-note',
+        'blocks.pricings',
+        'blocks.prestations',
+        'blocks.pricing-pack'
+      ]
+    >;
+    accroche: Attribute.Blocks;
+    objectif: Attribute.Blocks;
+    sectionCTA: Attribute.Component<'blocks.section-cta'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1240,7 +1258,8 @@ export interface ApiStrategieDigitaleStrategieDigitale
         'blocks.cards-basic',
         'blocks.section-cta',
         'blocks.double-content',
-        'blocks.check-lists'
+        'blocks.check-lists',
+        'blocks.pricing-pack'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;

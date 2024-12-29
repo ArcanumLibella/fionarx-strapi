@@ -23,16 +23,37 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "introduction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.introduction"
-    },
     "vision": {
       "type": "string"
     },
-    "target": {
-      "type": "text"
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.button",
+        "blocks.check-lists",
+        "blocks.list",
+        "blocks.link",
+        "blocks.quote",
+        "blocks.section-cta",
+        "blocks.separator",
+        "blocks.text",
+        "blocks.images-slider",
+        "blocks.foot-note",
+        "blocks.pricings",
+        "blocks.prestations",
+        "blocks.pricing-pack"
+      ]
+    },
+    "accroche": {
+      "type": "blocks"
+    },
+    "objectif": {
+      "type": "blocks"
+    },
+    "sectionCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.section-cta"
     }
   }
 }
