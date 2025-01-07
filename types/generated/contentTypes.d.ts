@@ -908,7 +908,14 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
         'blocks.double-button',
         'blocks.list',
         'blocks.quote',
-        'blocks.foot-note'
+        'blocks.foot-note',
+        'blocks.cards-basic-image',
+        'blocks.cards-basic',
+        'blocks.cards-strategy',
+        'blocks.checklist',
+        'blocks.double-content',
+        'blocks.image',
+        'blocks.options'
       ]
     >;
     sectionCTA: Attribute.Component<'blocks.section-cta'>;

@@ -64,7 +64,28 @@ export interface BlocksCardBasicImage extends Schema.Component {
         'search',
         'shoppingCart',
         'thumbsUp',
-        'trendingUp'
+        'trendingUp',
+        'bookOpen',
+        'briefCase',
+        'code',
+        'feather',
+        'frown',
+        'link',
+        'lock',
+        'meh',
+        'messageCircle',
+        'monitor',
+        'penTool',
+        'settings',
+        'share',
+        'star',
+        'sun',
+        'tag',
+        'thumbsDown',
+        'tool',
+        'trendingDown',
+        'users',
+        'zap'
       ]
     >;
   };
