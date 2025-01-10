@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_mini_step_blocks",
+  "info": {
+    "displayName": "MiniStepBlock",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.mini-step"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

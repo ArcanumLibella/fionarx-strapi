@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_mini_steps",
+  "info": {
+    "displayName": "MiniStep",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "isLast": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -54,7 +54,8 @@
         "blocks.checklist",
         "blocks.double-content",
         "blocks.image",
-        "blocks.options"
+        "blocks.options",
+        "blocks.mini-step-block"
       ]
     },
     "sectionCTA": {

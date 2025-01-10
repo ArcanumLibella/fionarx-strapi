@@ -334,6 +334,33 @@ export interface BlocksList extends Schema.Component {
   };
 }
 
+export interface BlocksMiniStepBlock extends Schema.Component {
+  collectionName: 'components_blocks_mini_step_blocks';
+  info: {
+    displayName: 'MiniStepBlock';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    items: Attribute.Component<'blocks.mini-step', true>;
+    description: Attribute.Text;
+  };
+}
+
+export interface BlocksMiniStep extends Schema.Component {
+  collectionName: 'components_blocks_mini_steps';
+  info: {
+    displayName: 'MiniStep';
+    icon: 'grid';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    content: Attribute.Text;
+    isLast: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
 export interface BlocksOptions extends Schema.Component {
   collectionName: 'components_blocks_options';
   info: {
@@ -728,6 +755,8 @@ declare module '@strapi/types' {
       'blocks.item-list': BlocksItemList;
       'blocks.link': BlocksLink;
       'blocks.list': BlocksList;
+      'blocks.mini-step-block': BlocksMiniStepBlock;
+      'blocks.mini-step': BlocksMiniStep;
       'blocks.options': BlocksOptions;
       'blocks.prestations': BlocksPrestations;
       'blocks.pricing-card': BlocksPricingCard;
