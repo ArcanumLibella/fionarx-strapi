@@ -40,7 +40,9 @@
         "blocks.cards-basic",
         "blocks.section-cta",
         "blocks.double-content",
-        "blocks.cards-basic-image"
+        "blocks.cards-basic-image",
+        "blocks.list",
+        "blocks.pricing-pack"
       ]
     },
     "seo": {
@@ -48,21 +50,19 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "introduction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.introduction"
-    },
-    "expertise": {
-      "type": "string"
-    },
-    "subtitle": {
-      "type": "blocks"
-    },
     "sectionCTA": {
       "type": "component",
       "repeatable": false,
       "component": "blocks.section-cta"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "accroche": {
+      "type": "blocks"
+    },
+    "objectif": {
+      "type": "blocks"
     }
   }
 }
