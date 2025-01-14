@@ -83,6 +83,10 @@
     "isMonthly": {
       "type": "boolean",
       "default": false
+    },
+    "isLarge": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
