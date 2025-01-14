@@ -145,11 +145,15 @@ export interface BlocksCardPrestation extends Schema.Component {
   info: {
     displayName: 'CardPrestation';
     icon: 'handHeart';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
     slug: Attribute.String;
+    isFrom: Attribute.Boolean & Attribute.DefaultTo<false>;
+    pricing: Attribute.Integer;
+    button: Attribute.Component<'blocks.button'>;
   };
 }
 

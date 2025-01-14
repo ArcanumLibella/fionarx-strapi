@@ -2,7 +2,8 @@
   "collectionName": "components_blocks_card_prestations",
   "info": {
     "displayName": "CardPrestation",
-    "icon": "handHeart"
+    "icon": "handHeart",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,6 +15,18 @@
     },
     "slug": {
       "type": "string"
+    },
+    "isFrom": {
+      "type": "boolean",
+      "default": false
+    },
+    "pricing": {
+      "type": "integer"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.button"
     }
   }
 }
