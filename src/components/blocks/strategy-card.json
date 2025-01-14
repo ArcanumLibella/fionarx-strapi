@@ -51,6 +51,9 @@
     "isLastCard": {
       "type": "boolean",
       "default": false
+    },
+    "ctaLink": {
+      "type": "string"
     }
   }
 }

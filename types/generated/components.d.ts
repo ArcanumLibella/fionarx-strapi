@@ -606,6 +606,7 @@ export interface BlocksStrategyCard extends Schema.Component {
     short: Attribute.Text;
     slug: Attribute.String;
     isLastCard: Attribute.Boolean & Attribute.DefaultTo<false>;
+    ctaLink: Attribute.String;
   };
 }
 
