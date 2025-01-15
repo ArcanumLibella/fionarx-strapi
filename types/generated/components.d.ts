@@ -154,6 +154,7 @@ export interface BlocksCardPrestation extends Schema.Component {
     isFrom: Attribute.Boolean & Attribute.DefaultTo<false>;
     pricing: Attribute.Integer;
     button: Attribute.Component<'blocks.button'>;
+    isDisabled: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
 

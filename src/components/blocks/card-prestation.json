@@ -27,6 +27,10 @@
       "type": "component",
       "repeatable": false,
       "component": "blocks.button"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
