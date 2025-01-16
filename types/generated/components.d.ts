@@ -349,6 +349,7 @@ export interface BlocksMiniStepBlock extends Schema.Component {
   attributes: {
     items: Attribute.Component<'blocks.mini-step', true>;
     description: Attribute.Text;
+    withArrow: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
 

@@ -46,7 +46,8 @@
         "blocks.list",
         "blocks.cards-basic-image",
         "blocks.image",
-        "blocks.cards-strategy"
+        "blocks.cards-strategy",
+        "blocks.mini-step-block"
       ]
     },
     "seo": {

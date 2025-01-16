@@ -1048,7 +1048,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'blocks.list',
         'blocks.cards-basic-image',
         'blocks.image',
-        'blocks.cards-strategy'
+        'blocks.cards-strategy',
+        'blocks.mini-step-block'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
