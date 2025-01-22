@@ -44,11 +44,6 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "content": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.introduction"
-    },
     "expertise": {
       "type": "string"
     },
@@ -59,6 +54,9 @@
       "type": "component",
       "repeatable": false,
       "component": "blocks.section-cta"
+    },
+    "accroche": {
+      "type": "blocks"
     }
   }
 }

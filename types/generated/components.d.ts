@@ -428,6 +428,8 @@ export interface BlocksPricingCard extends Schema.Component {
     duration: Attribute.String;
     isMonthly: Attribute.Boolean & Attribute.DefaultTo<false>;
     isLarge: Attribute.Boolean & Attribute.DefaultTo<false>;
+    isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
+    isFree: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 

@@ -1275,10 +1275,10 @@ export interface ApiStrategieDigitaleStrategieDigitale
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
-    content: Attribute.Component<'blocks.introduction'>;
     expertise: Attribute.String;
     subtitle: Attribute.Blocks;
     sectionCTA: Attribute.Component<'blocks.section-cta'>;
+    accroche: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -87,6 +87,14 @@
     "isLarge": {
       "type": "boolean",
       "default": false
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    },
+    "isFree": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
