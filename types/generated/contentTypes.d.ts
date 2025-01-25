@@ -1055,6 +1055,7 @@ export interface ApiPagePage extends Schema.CollectionType {
     seo: Attribute.Component<'shared.seo'>;
     introduction: Attribute.Component<'blocks.introduction'>;
     sectionCTA: Attribute.Component<'blocks.section-cta'>;
+    accroche: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
