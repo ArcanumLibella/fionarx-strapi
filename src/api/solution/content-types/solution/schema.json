@@ -18,11 +18,6 @@
     "slug": {
       "type": "string"
     },
-    "introduction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.introduction"
-    },
     "vision": {
       "type": "string"
     },
@@ -51,11 +46,20 @@
         "blocks.prestations",
         "blocks.accordions-group",
         "blocks.check-lists",
-        "blocks.pricing-pack"
+        "blocks.pricing-pack",
+        "blocks.header-gradient"
       ]
     },
-    "target": {
-      "type": "text"
+    "objectif": {
+      "type": "blocks"
+    },
+    "accroche": {
+      "type": "blocks"
+    },
+    "sectionCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.section-cta"
     }
   }
 }

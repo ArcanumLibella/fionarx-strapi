@@ -201,6 +201,7 @@ export interface BlocksCheckLists extends Schema.Component {
   };
   attributes: {
     checklists: Attribute.Component<'blocks.checklist', true>;
+    isCrossIcon: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
@@ -209,6 +210,7 @@ export interface BlocksChecklist extends Schema.Component {
   info: {
     displayName: 'Checklist';
     icon: 'check';
+    description: '';
   };
   attributes: {
     content: Attribute.Blocks;
@@ -265,6 +267,20 @@ export interface BlocksFooter extends Schema.Component {
     button: Attribute.Component<'blocks.button'>;
     title: Attribute.Text;
     subtitle: Attribute.Text;
+  };
+}
+
+export interface BlocksHeaderGradient extends Schema.Component {
+  collectionName: 'components_blocks_header_gradients';
+  info: {
+    displayName: 'HeaderGradient';
+    icon: 'bold';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.Text;
+    description: Attribute.Text;
+    button: Attribute.Component<'blocks.button'>;
   };
 }
 
@@ -438,6 +454,7 @@ export interface BlocksPricingPack extends Schema.Component {
   info: {
     displayName: 'PricingPack';
     icon: 'shoppingCart';
+    description: '';
   };
   attributes: {
     items: Attribute.Component<'blocks.item-list', true>;
@@ -450,6 +467,9 @@ export interface BlocksPricingPack extends Schema.Component {
     hasSupport: Attribute.Boolean & Attribute.DefaultTo<false>;
     supportTitle: Attribute.Text;
     supportDescription: Attribute.Text;
+    title: Attribute.Text;
+    description: Attribute.Text;
+    isDiscounted: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
@@ -759,6 +779,7 @@ declare module '@strapi/types' {
       'blocks.double-content': BlocksDoubleContent;
       'blocks.foot-note': BlocksFootNote;
       'blocks.footer': BlocksFooter;
+      'blocks.header-gradient': BlocksHeaderGradient;
       'blocks.image': BlocksImage;
       'blocks.images-slider': BlocksImagesSlider;
       'blocks.introduction': BlocksIntroduction;

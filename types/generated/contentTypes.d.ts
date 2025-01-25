@@ -1195,7 +1195,6 @@ export interface ApiSolutionSolution extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     slug: Attribute.String;
-    introduction: Attribute.Component<'blocks.introduction'>;
     vision: Attribute.String;
     seo: Attribute.Component<'shared.seo'>;
     blocks: Attribute.DynamicZone<
@@ -1217,10 +1216,13 @@ export interface ApiSolutionSolution extends Schema.CollectionType {
         'blocks.prestations',
         'blocks.accordions-group',
         'blocks.check-lists',
-        'blocks.pricing-pack'
+        'blocks.pricing-pack',
+        'blocks.header-gradient'
       ]
     >;
-    target: Attribute.Text;
+    objectif: Attribute.Blocks;
+    accroche: Attribute.Blocks;
+    sectionCTA: Attribute.Component<'blocks.section-cta'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
