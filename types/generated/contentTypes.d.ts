@@ -916,7 +916,10 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
         'blocks.double-content',
         'blocks.image',
         'blocks.options',
-        'blocks.mini-step-block'
+        'blocks.mini-step-block',
+        'blocks.accordions-group',
+        'blocks.header-gradient',
+        'blocks.stages'
       ]
     >;
     sectionCTA: Attribute.Component<'blocks.section-cta'>;

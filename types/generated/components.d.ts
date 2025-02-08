@@ -393,7 +393,7 @@ export interface BlocksOptions extends Schema.Component {
   attributes: {
     options: Attribute.Component<'blocks.card-option', true>;
     title: Attribute.String;
-    description: Attribute.String;
+    description: Attribute.Blocks;
   };
 }
 
