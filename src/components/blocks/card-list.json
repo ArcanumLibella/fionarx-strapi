@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_card_lists",
+  "info": {
+    "displayName": "CardList",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

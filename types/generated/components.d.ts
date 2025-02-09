@@ -121,6 +121,23 @@ export interface BlocksCardCta extends Schema.Component {
   };
 }
 
+export interface BlocksCardList extends Schema.Component {
+  collectionName: 'components_blocks_card_lists';
+  info: {
+    displayName: 'CardList';
+    icon: 'check';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Blocks;
+    isDisabled: Attribute.Boolean & Attribute.DefaultTo<true>;
+    ctaLabel: Attribute.String;
+    ctaLink: Attribute.String;
+    isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
 export interface BlocksCardOption extends Schema.Component {
   collectionName: 'components_blocks_card_options';
   info: {
@@ -177,6 +194,17 @@ export interface BlocksCardsBasic extends Schema.Component {
   };
   attributes: {
     items: Attribute.Component<'blocks.card-basic', true>;
+  };
+}
+
+export interface BlocksCardsList extends Schema.Component {
+  collectionName: 'components_blocks_cards_lists';
+  info: {
+    displayName: 'CardsList';
+    icon: 'apps';
+  };
+  attributes: {
+    cards: Attribute.Component<'blocks.card-list', true>;
   };
 }
 
@@ -768,10 +796,12 @@ declare module '@strapi/types' {
       'blocks.card-basic-image': BlocksCardBasicImage;
       'blocks.card-basic': BlocksCardBasic;
       'blocks.card-cta': BlocksCardCta;
+      'blocks.card-list': BlocksCardList;
       'blocks.card-option': BlocksCardOption;
       'blocks.card-prestation': BlocksCardPrestation;
       'blocks.cards-basic-image': BlocksCardsBasicImage;
       'blocks.cards-basic': BlocksCardsBasic;
+      'blocks.cards-list': BlocksCardsList;
       'blocks.cards-strategy': BlocksCardsStrategy;
       'blocks.check-lists': BlocksCheckLists;
       'blocks.checklist': BlocksChecklist;

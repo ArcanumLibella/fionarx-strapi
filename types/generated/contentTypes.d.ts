@@ -919,7 +919,8 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
         'blocks.mini-step-block',
         'blocks.accordions-group',
         'blocks.header-gradient',
-        'blocks.stages'
+        'blocks.stages',
+        'blocks.cards-list'
       ]
     >;
     sectionCTA: Attribute.Component<'blocks.section-cta'>;
@@ -1277,7 +1278,11 @@ export interface ApiStrategieDigitaleStrategieDigitale
         'blocks.section-cta',
         'blocks.double-content',
         'blocks.check-lists',
-        'blocks.pricing-pack'
+        'blocks.pricing-pack',
+        'blocks.header-gradient',
+        'blocks.options',
+        'blocks.cards-strategy',
+        'blocks.cards-list'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;

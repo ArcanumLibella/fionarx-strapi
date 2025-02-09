@@ -36,7 +36,11 @@
         "blocks.section-cta",
         "blocks.double-content",
         "blocks.check-lists",
-        "blocks.pricing-pack"
+        "blocks.pricing-pack",
+        "blocks.header-gradient",
+        "blocks.options",
+        "blocks.cards-strategy",
+        "blocks.cards-list"
       ]
     },
     "seo": {
