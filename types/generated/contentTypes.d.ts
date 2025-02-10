@@ -1110,7 +1110,11 @@ export interface ApiPrestationPrestation extends Schema.CollectionType {
         'blocks.double-content',
         'blocks.cards-basic-image',
         'blocks.list',
-        'blocks.pricing-pack'
+        'blocks.pricing-pack',
+        'blocks.header-gradient',
+        'blocks.mini-step-block',
+        'blocks.cards-strategy',
+        'blocks.cards-list'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
