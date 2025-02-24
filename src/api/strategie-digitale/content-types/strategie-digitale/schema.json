@@ -40,7 +40,8 @@
         "blocks.header-gradient",
         "blocks.options",
         "blocks.cards-strategy",
-        "blocks.cards-list"
+        "blocks.cards-list",
+        "blocks.list"
       ]
     },
     "seo": {
